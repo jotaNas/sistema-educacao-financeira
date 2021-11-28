@@ -1,0 +1,14 @@
+{
+  "cursos": [
+    {
+      "name": "Desenvolvedor Front ",
+      "teacher_name": "Anderson",
+      "id": 3
+    },
+    {
+      "name": "Desenvolvedor Back-end",
+      "teacher_name": "Anderson",
+      "id": 4
+    }
+  ]
+}
