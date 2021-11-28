@@ -97,7 +97,10 @@ async function onSubmit(evt) {
     showError("Você deve preencher todos os campos.");
   } else {
     if (selectedItem) {
-      const updatedCourse = await atualizarCurso(selectedItem.id, cursoData);
+      const updatedCourse = await atualizarCurso(
+        selectedItem.teacher_name,
+        cursoData
+      );
       const i = cursos.indexOf(selectedItem);
       cursos[i] = updatedCourse;
       renderData();
