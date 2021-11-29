@@ -1,24 +1,28 @@
 {
   "cursos": [
     {
-      "name": "Desenvolvedor back ",
+      "id": 1,
+      "title": "Desenvolvedor front-end ",
+      "description": "Aprender a fazer páginas web de grande valor",
+      "image": "http://www.webdeveloper.com",
       "teacher_name": "Anderson",
-      "id": 2
+      "class_list": "link1"
     },
     {
-      "name": "Desenvolvedor Front ",
+      "id": 2,
+      "title": "Desenvolvedor back-end ",
+      "description": "Aprender a fazer páginas web de grande valor",
+      "image": "http://www.webdeveloper.com",
       "teacher_name": "Anderson",
-      "id": 3
+      "class_list": "link1"
     },
     {
-      "name": "Desenvolvedor Back-end",
+      "id": 3,
+      "title": "Desenvolvedor android ",
+      "description": "Aprender a fazer páginas web de grande valor",
+      "image": "http://www.webdeveloper.com",
       "teacher_name": "Anderson",
-      "id": 4
-    },
-    {
-      "name": "aaaa",
-      "teacher_name": 2,
-      "id": 5
+      "class_list": "link1"
     }
   ]
 }
