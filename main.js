@@ -30,7 +30,7 @@ function selectItem(curso, li) {
   clearSelection();
   selectedItem = curso;
   li.classList.add("selected");
-  formEl.name.value = curso.title;
+  formEl.title.value = curso.title;
   bdelete.style.display = "inline";
   bcancel.style.display = "inline";
   bsubmit.textContent = "Update";
@@ -43,7 +43,7 @@ function clearSelection() {
   if (li) {
     li.classList.remove("selected");
   }
-  formEl.name.value = "";
+  formEl.title.value = "";
 
   formEl.teacher_name.value = "";
   bdelete.style.display = "none";
@@ -90,7 +90,7 @@ function clearError() {
 async function onSubmit(evt) {
   evt.preventDefault();
   const cursoData = {
-    title: formEl.name.value,
+    title: formEl.title.value,
     teacher_name: +formEl.teacher_name.value,
   };
   if (!cursoData.title || !cursoData.teacher_name) {
