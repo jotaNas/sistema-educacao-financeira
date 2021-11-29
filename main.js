@@ -21,7 +21,7 @@ function renderCursos() {
   for (const curso of cursos) {
     const option = document.createElement("option");
     option.textContent = curso.teacher_name;
-    option.value = curso.id;
+    option.value = curso.teacher_name;
     formEl.teacher_name.appendChild(option);
   }
 }
@@ -90,10 +90,10 @@ function clearError() {
 async function onSubmit(evt) {
   evt.preventDefault();
   const cursoData = {
-    name: formEl.name.value,
+    title: formEl.name.value,
     teacher_name: +formEl.teacher_name.value,
   };
-  if (!cursoData.name || !cursoData.teacher_name) {
+  if (!cursoData.title || !cursoData.teacher_name) {
     showError("Você deve preencher todos os campos.");
   } else {
     if (selectedItem) {
